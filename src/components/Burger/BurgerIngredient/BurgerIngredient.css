@@ -21,7 +21,7 @@
     width: 10%;
     height: 15%;
     position: absolute;
-    background-color: white;
+    background-color: rgb(228, 218, 161);
     left: 30%;
     top: 50%;
     border-radius: 40%;
@@ -59,7 +59,7 @@
     width: 10%;
     height: 15%;
     position: absolute;
-    background-color: white;
+    background-color: rgb(226, 221, 175);
     left: 64%;
     top: 50%;
     border-radius: 40%;
