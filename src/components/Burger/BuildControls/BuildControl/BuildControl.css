@@ -19,7 +19,7 @@
 
 .BuildControl button:disabled {
     background-color: rgb(128, 172, 139);
-    border: 1px solid rgb(235, 235, 235);
+    border: 1px solid rgb(255, 255, 255);
     color: #ccc;
     cursor: default;
 }
@@ -34,6 +34,7 @@
     padding: 10px;
     font-weight: bold;
     width: 80px;
+    color: #5e5e5e
 }
 
 .BuildControl .Less {  
@@ -47,52 +48,12 @@
 }
 
 .BuildControl .Less:hover, .BuildControl .Less:active {  
-    background-color: #DAA972;
+    background-color: #74ffd5fa;
     color: white;
 }
 
 .BuildControl .More:hover,.BuildControl .More:active {
-    background-color: #99703F;
+    background-color: #08cf94;
     color: white;
 }
 
-.OrderButto {
-    background-color: #DAD735;
-    outline: none;
-    cursor: pointer;
-    border: 1px solid #966909;
-    color: #966909;
-    font-family: inherit;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    box-shadow: 2px 2px 2px #966909;
-}
-
-.OrderButton:hover, .OrderButton:active {
-    background-color: #A0DB41;
-    border: 1px solid #966909;
-    color: #966909;
-}
-
-.OrderButton:disabled {
-    background-color: #C7C6C6;
-    cursor: not-allowed;
-    border: 1px solid #ccc;
-    color: #888888;
-}
-
-.OrderButton:not(:disabled) {
-    animation: enable 0.3s linear;
-}
-
-@keyframes enable {
-    0% {
-        transform: scale(1);
-    }
-    60% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
