@@ -14,11 +14,6 @@ const INGREDIENT_PRICES =   {
 
 class BurgerBuilder extends Component {
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {...}
-    // }
-
     addIngredientHandler = (type) => {
         const oldCount = this.state.ingredients[type];
         const updatedCount = oldCount + 1;
@@ -106,7 +101,8 @@ class BurgerBuilder extends Component {
                     <OrderSummary 
                         ingredients={this.state.ingredients}
                         purchaseCancelled={this.purchaseCancelHandler}
-                        purchaseContinued={this.purchaseContinueHandler}                    
+                        purchaseContinued={this.purchaseContinueHandler}
+                        price={this.state.totalPrice.toFixed(2)}                 
                         />
                 </Modal>
                 <Burger ingredients={this.state.ingredients}/>
